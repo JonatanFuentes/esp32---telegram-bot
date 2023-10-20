@@ -42,35 +42,35 @@ void loop() {
     Serial << "Mensaje: " << msg.sender.firstName << " - " << msg.text << "\n";
 
      if (msg.text == "/encender1") {
-      digitalWrite(relay1Pin, HIGH);  // Encender el primer relé
+      digitalWrite(relay1Pin, HIGH); 
       miBot.sendMessage(msg.sender.id, "Relé 1 encendido.");
     }
     else if (msg.text == "/apagar1") {
-      digitalWrite(relay1Pin, LOW);  // Encender el primer relé
-      miBot.sendMessage(msg.sender.id, "Relé 1 encendido.");
+      digitalWrite(relay1Pin, LOW); 
+      miBot.sendMessage(msg.sender.id, "Relé 1 apagado.");
     }
     else if (msg.text == "/encender2") {
-      digitalWrite(relay2Pin, HIGH);  // Encender el primer relé
+      digitalWrite(relay2Pin, HIGH);  
       miBot.sendMessage(msg.sender.id, "Relé 2 encendido.");
     }
     else if (msg.text == "/apagar2") {
-      digitalWrite(relay2Pin, LOW);  // Encender el primer relé
+      digitalWrite(relay2Pin, LOW);  
       miBot.sendMessage(msg.sender.id, "Relé 2 apagado.");
     }
     else if (msg.text == "/encender3") {
-      digitalWrite(relay3Pin, HIGH);  // Encender el primer relé
+      digitalWrite(relay3Pin, HIGH);  
       miBot.sendMessage(msg.sender.id, "Relé 3 encendido.");
     }
     else if (msg.text == "/apagar3") {
-      digitalWrite(relay3Pin, LOW);  // Encender el primer relé
+      digitalWrite(relay3Pin, LOW);  
       miBot.sendMessage(msg.sender.id, "Relé 3 apagado.");
     }
     else if (msg.text == "/encender4") {
-      digitalWrite(relay4Pin, HIGH);  // Encender el primer relé
+      digitalWrite(relay4Pin, HIGH);  
       miBot.sendMessage(msg.sender.id, "Relé 4 encendido.");
     }
     else if (msg.text == "/apagar4") {
-      digitalWrite(relay4Pin, LOW);  // Encender el primer relé
+      digitalWrite(relay4Pin, LOW); 
       miBot.sendMessage(msg.sender.id, "Relé 4 apagado.");
     }
   }
